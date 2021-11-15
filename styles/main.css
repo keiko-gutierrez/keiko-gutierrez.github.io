@@ -7,6 +7,7 @@
 
 
 body.identity-values{
+  column-count: 2;
   background-color: rgb(238, 99, 180);
    text-align: center;
   color: rgb(53, 11, 53)
@@ -19,18 +20,21 @@ body.identity-values{
  }
 
 
-.boxed {border: 5px solid black; border-radius: 20%; }
+
 .boxed-link {border: 20px solid rgb(53, 11, 53); width: 50px; height: 20px; }
-.smaller-image {width: 200px; border: 20px, black; border-style: solid; border-radius: 20%;}
+.smaller-image {width: 200px; border: 20px; border-color:  black; border-style: solid; border-radius: 20%;}
 .space { display: inline-block;
   padding: 5px;
   border: 1px solid none;
 }
+
+
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
-
+.text-border {border: 5px; border-color:  black; border-style: solid; }
+.link-border {border: 1px, solid, black;}
 
 
 
