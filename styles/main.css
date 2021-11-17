@@ -1,42 +1,115 @@
  body {}
  body.index  {
-  background-color: rgb(3, 63, 3);
-   text-align: center;
+  background: linear-gradient(0deg, #9c0990, black, #9c0990) no-repeat;
+  background-attachment: fixed;
+  text-align: center;
   color: greenyellow;
   font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 
-body.identity-values{
-  column-count: 2;
-  background-color: rgb(238, 99, 180);
-   text-align: center;
-  color: rgb(53, 11, 53)
-  font-family: Verdana, Geneva, Tahoma, sans-serif;}
-  body.index  {
-  background-color: rgb(3, 63, 3);
-   text-align: center;
-  color: greenyellow;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;}
- }
+body.blogs{
+  background: conic-gradient( #580551, black, #580551) no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+   font-size:large;
+  color: #daa700;
+  font-family: monospace;
+  font-weight: bold;
+  }
+
+ 
+ .Goldlight { color: #fcefb8;
+   text-shadow: 1px 1px #facc01;}
 
 
 
-.boxed-link {border: 20px solid rgb(53, 11, 53); width: 50px; height: 20px; }
-.smaller-image {width: 200px; border: 20px; border-color:  black; border-style: solid; border-radius: 20%;}
-.space { display: inline-block;
-  padding: 5px;
-  border: 1px solid none;
-}
+   
+ .column {
+  float: left;
+  padding: 10px;
+  height: 300px;}
+
+.left { 
+  height: auto; 
+  width: 5%;}
+
+  .button {
+    width: 100px;
+    background-color: rgb(223, 168, 223);
+    box-shadow: 2px 2px 2px 2px black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    display: block;
+   margin: 5px 5px 5px 5px;  }
+
+.right { height: auto;
+  width: 90%;}
+  .right-image {
+    width: 90%;
+    }
+   
 
 
-.flex-container {
-  display: flex;
-  flex-direction: column; 
-}
-.text-border {border: 5px; border-color:  black; border-style: solid; }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+
+  .smaller-image {width: 200px; border: 5px; border-color:  #ffd651; border-style: solid; border-radius: 20%;}
+.text-border {border: 1px; border-color: #ffd651; border-style: solid; padding: 10px;}
+
 .link-border {border: 1px, solid, black;}
 
 
+.images-column {
+  float: right;
+  width: 20%;
+  padding: 10px;
+}
 
+/* Style the images inside the grid */
+.images-column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
+.images-column img:hover {
+  opacity: 1;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
