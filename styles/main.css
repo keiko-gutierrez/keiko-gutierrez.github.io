@@ -1,3 +1,8 @@
+ 
+ html {
+  font-size:16px;
+}
+ 
  body {}
  body.index  {
   background: linear-gradient(0deg, #9c0990, black, #9c0990) no-repeat;
@@ -11,7 +16,7 @@ body.blogs{
   background: conic-gradient( #580551, black, #580551) no-repeat;
   background-attachment: fixed;
   text-align: center;
-   font-size:large;
+  font-size: calc(0.5rem + 0.5vw);
   color: #daa700;
   font-family: monospace;
   font-weight: bold;
@@ -41,13 +46,15 @@ body.blogs{
     text-align: center;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: calc(0.5rem + 0.5vw);
     font-weight: bold;
     display: block;
    margin: 5px 5px 5px 5px;  }
 
-.right { height: auto;
-  width: 90%;}
+.right { 
+  float: right;
+  height: auto;
+  width: calc(90% - 1em) ;}
   .right-image {
     width: 90%;
     }
