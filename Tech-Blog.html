@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +9,71 @@
 
 
 
-<body class="blogs">
-    <h1 class="Goldlight">Tech Blog</h1>
-    <h2 class="Goldlight">HTML & CSS</h2>
+<body class="tech-blog">
+    <h1 class="tb-Titles">Tech-Blog</h1>
+    <h2 class="tb-Titles">Dom</h2>
     <div class="row">
         <div class="column left ">
 
-            <a href="index.html" class="button"> Home</a>
+            <a href="index.html" class="tb-buttons"> Home</a>
             <br>
-            <a href="identityvalues.html" class="button"> Identity Values</a>
+            <a href="identityvalues.html" class="tb-buttons"> Identity Values</a>
             <br>
-            <a href="learning-plan.html" class="button"> Learning Plan </a>
+            <a href="learning-plan.html" class="tb-buttons"> Learning Plan </a>
             <br>
-            <a href="index.html" class="button"> Tech Blog </a>
+            <a href="Tech-Blog.html" class="tb-buttons"> Tech Blog </a>
+            <br>
+            <a href="reflections.html" class="tb-buttons"> Reflections</a>
+        </div>
+        <div class="column right">
+            <div class="text-border">
+
+
+                <pre class="domtree">
+Document
+    Root Element &lt;HTML&gt;
+            Element &lt;Head&gt; 
+                Element &lt;Title&gt; 
+                    Text: "My Title" 
+               
+            Element &lt;Body&gt;
+                Element &lt;div&gt; -container
+                Element &lt;h1&gt;
+                    Text: "A heading"
+                Element &lt;p&gt; 
+                Text: "My Paragraph
+                Element &lt;a&gt;
+                    - Attribute: href
+                        - Text: "Link text"
+                Element &lt;span&gt;
+                        Element &lt;img&gt;
+                            - Attribute: src 
+                            - Image displayed 
+                </pre>
+
+                <p class="domtree-text">
+                    The DOM is an API (Application Programming Interface).
+                    Its is the skeleton or blueprint of the webpage.
+                    The DOM Tree on the left shows a very basic webpage DOM.
+                    The terms 'Parent', 'Child' and 'Sibling' are used to recognise the elements.
+                    <br>
+                    <br>
+                    The oldest Parent is the document here, with the Root Element the child
+                    This would make the Head and Body Elements the 'Grandchildren' of the Doument.
+                    These again have children for the head the title and then the 'div', 'p', 'a' and 'span' are all child
+                    elements of the body.
+                    <br>
+                    <br>
+                    elements that share a parent can be refeered to as siblings, the Head and Body would be siblingsas
+                    would the 'div', 'h1', 'p', 'a', 'span'.
+
+                </p>
+                <span style="float: right; margin: 20px 20px 0px 0px; "> <img src="styles/blog-pics/example page.PNG"
+                        width="500" length="800" ;> </span>
+                <pre style="float: right;"> This above image is a rough example 
+                            showing the DOM tree (left) in a webpage</pre>
+                <div class="clear"></div>
+
+            </div>
         </div>
     </div>
-</body>

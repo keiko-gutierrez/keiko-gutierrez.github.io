@@ -3,6 +3,9 @@
   font-size:16px;
 }
  
+
+
+
  body {}
  body.index  {
   background: linear-gradient(0deg, #9c0990, black, #9c0990) no-repeat;
@@ -22,14 +25,65 @@ body.blogs{
   font-weight: bold;
   }
 
- 
+  body.tech-blog{
+    background: conic-gradient( #ffffff, #ff4800,  #ffffff, #ff4800,  #ffffff) no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: calc(0.5rem + 0.5vw);
+    color: #a12e00;
+        font-family: monospace;
+    font-weight: bold;
+    
+    }
+    .tb-Titles{
+      text-shadow: 1px 1px #facc01;
+    }
+    
+
+  h6 { font-size: calc(0.5rem + 0.5vw);
+    color: #daa700;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.domtree{
+  float: left;
+  border: 1px; 
+  border-color: #ff4800; 
+  border-style: solid; 
+  box-shadow: 2px 2px 2px 2px black;
+  width: 450px;
+  padding: 10px;
+  margin: 20px 12px 20px 20px;
+  background-color: #fc7945;
+  text-align: justify;
+  color: black;
+} 
+.domtree-text{
+  float: left;
+  border: 1px; 
+  border-color: #ff4800; 
+  border-style: solid; 
+  box-shadow: 2px 2px 2px 2px black;
+  width: 500px;
+  padding: 10px;
+  margin: 20px 12px 20px 20px;
+  background-color: #fc7945;
+  text-align: justify;
+  color: black;
+} 
+
+
+
+.clear{
+clear: both;
+}
+
  .Goldlight { color: #fcefb8;
    text-shadow: 1px 1px #facc01;}
 
-  
-}
 
-   
  .column {
   
   padding: 10px;
@@ -39,8 +93,23 @@ body.blogs{
  
   }
 
+  .tb-buttons{
+    width: 130px;
+    background-color: #fc7945 ;
+    box-shadow: 2px 2px 2px 2px black;
+    color: #a12e00 ;  
+    text-shadow: 0.2px 0.2px #000000;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: bold;
+    display: block;
+   margin: 5px 5px 5px 5px;
+    }
+
   .button {
-       width: 100px;
+       width: 130px;
     background-color: rgb(223, 168, 223);
     box-shadow: 2px 2px 2px 2px black;
     color: #580551;
@@ -52,12 +121,20 @@ body.blogs{
     display: block;
    margin: 5px 5px 5px 5px;  }
 
+
+
 .right { 
+  
   float: right;
   height: auto;
   margin: 10px;
   padding: 10px;
-  width: calc(90% / 2 * 2);}
+  width: calc(88% / 2 * 2);}
+
+.tb-split{
+ border: 1px; border-color: #ffd651; border-style: solid; padding: 10px;
+ float: left;
+}
 
 
 
@@ -67,7 +144,7 @@ body.blogs{
   clear: both;}
 
 
-.text-border {border: 1px; border-color: #ffd651; border-style: solid; padding: 10px;}
+.text-border {border: 1px; border-color: #ffd651; border-style: solid; padding: 5px;}
 
 .link-border {border: 1px, solid, black;}
 
