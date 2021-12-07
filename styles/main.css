@@ -2,43 +2,83 @@
  html {
   font-size:16px;
 }
- 
+
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #a12e00;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ff4800;
+  color: #a12e00;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #a12e00;
+  color:  #facc01;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 10%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
 
 
-
- body {}
- body.index  {
-  background: linear-gradient(0deg, #9c0990, black, #9c0990) no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-  color: greenyellow;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-
-body.blogs{
-  background: conic-gradient( #580551, black, #580551) no-repeat;
+body { background: conic-gradient( #fc7945, #ff4800,  #fc7945,  #ff4800,  #fc7945) no-repeat;
   background-attachment: fixed;
   text-align: center;
   font-size: calc(0.5rem + 0.5vw);
-  color: #daa700;
+  color: #a12e00;
   font-family: monospace;
-  font-weight: bold;
-  }
+  font-weight: bold;}
 
-  body.tech-blog{
-    background: conic-gradient( #ffffff, #ff4800,  #ffffff, #ff4800,  #ffffff) no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-    font-size: calc(0.5rem + 0.5vw);
-    color: #a12e00;
-        font-family: monospace;
-    font-weight: bold;
-    
-    }
-    .tb-Titles{
-      text-shadow: 1px 1px #facc01;
-    }
-    
+h1 {text-shadow: 1px 1px #facc01;
+ }
+h2 {
+    text-shadow: 1px 1px #facc01;
+ }
+ h5 { font-size: calc(0.5rem + 0.5vw);
+  color: #a12e00;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
+} 
 
   h6 { font-size: calc(0.5rem + 0.5vw);
     color: #daa700;
@@ -46,6 +86,33 @@ body.blogs{
     font-style: italic;
     font-weight: bold;
   }
+  .Rubberducky{
+    float: left;
+    border: 2px; 
+    border-color: #ff4800; 
+    border-style: solid; 
+    box-shadow: 2px 2px 2px 2px black;
+    width: 535px;
+    padding: 10px; 
+    margin: 20px;
+    background-color: #fc7945;
+    text-align: justify;
+    color: black;
+  } 
+
+  .textblock{
+    float: left;
+    border: 2px; 
+    border-color: #ff4800; 
+    border-style: solid; 
+    box-shadow: 2px 2px 2px 2px black;
+    width: 735px;
+    padding: 10px; 
+    margin: 20px;
+    background-color: #fc7945;
+    text-align: justify;
+    color: black;
+  } 
 
 .domtree{
   float: left;
@@ -55,7 +122,7 @@ body.blogs{
   box-shadow: 2px 2px 2px 2px black;
   width: 450px;
   padding: 10px;
-  margin: 20px 12px 20px 20px;
+  margin: 10px 10px 10px 10px;
   background-color: #fc7945;
   text-align: justify;
   color: black;
@@ -68,75 +135,27 @@ body.blogs{
   box-shadow: 2px 2px 2px 2px black;
   width: 500px;
   padding: 10px;
-  margin: 20px 12px 20px 20px;
+  margin: 10px 10px 10px 10px;
   background-color: #fc7945;
   text-align: justify;
   color: black;
 } 
 
-
-
 .clear{
 clear: both;
 }
 
- .Goldlight { color: #fcefb8;
+.Goldlight { color: #fcefb8;
    text-shadow: 1px 1px #facc01;}
 
 
- .column {
-  
-  padding: 10px;
-  height: auto;}
-
-.left { float: left;
- 
-  }
-
-  .tb-buttons{
-    width: 130px;
-    background-color: #fc7945 ;
-    box-shadow: 2px 2px 2px 2px black;
-    color: #a12e00 ;  
-    text-shadow: 0.2px 0.2px #000000;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: bold;
-    display: block;
-   margin: 5px 5px 5px 5px;
-    }
-
-  .button {
-       width: 130px;
-    background-color: rgb(223, 168, 223);
-    box-shadow: 2px 2px 2px 2px black;
-    color: #580551;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: bold;
-    display: block;
-   margin: 5px 5px 5px 5px;  }
-
-
-
-.right { 
-  
+.column {
   float: right;
   height: auto;
-  margin: 10px;
+  margin: 2.5%;
   padding: 10px;
-  width: calc(88% / 2 * 2);}
-
-.tb-split{
- border: 1px; border-color: #ffd651; border-style: solid; padding: 10px;
- float: left;
-}
-
-
+  width: 85%;
+  }
 
 .row:after {
   content: "";
@@ -144,10 +163,7 @@ clear: both;
   clear: both;}
 
 
-.text-border {border: 1px; border-color: #ffd651; border-style: solid; padding: 5px;}
-
-.link-border {border: 1px, solid, black;}
-
+.text-border {border: 1px; border-color: #ffd651; border-style: solid; }
 
 .images-column {
   display: flex;
@@ -183,6 +199,7 @@ clear: both;
 .container {
   position: relative;
   display: none;
+  width: 700px;
 }
 
 /* Expanding image text */
