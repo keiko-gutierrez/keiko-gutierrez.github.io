@@ -24,12 +24,12 @@
 /* Active/current link */
 .sidebar a.active {
   background-color: #f55d83;
-  color: #a12e00;
+  color: #facc01;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #a12e00;
+  background-color: #f55d83;
   color:  #facc01;
 }
 
