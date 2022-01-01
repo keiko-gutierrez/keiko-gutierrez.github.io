@@ -11,7 +11,7 @@
   position: fixed;
   height: 100%;
   overflow: auto;
-}
+  }
 
 /* Sidebar links */
 .sidebar a {
@@ -60,28 +60,23 @@ div.content {
 }
 
 
-body { background: conic-gradient(#f55d83,#815939, #5d8155, #815939,#f55d83) no-repeat;
-  background-attachment: fixed;
-  text-align: center;
+body { background:  #5d8155;
+   text-align: center;
   font-size: calc(0.5rem + 0.5vw);
-  color: #a12e00;
+  color: #f55d83;
   font-family: monospace;
   font-weight: bold;}
 
-h1 {text-shadow: 1px 1px #facc01;
- }
-h2 {
-    text-shadow: 1px 1px #facc01;
- }
+
  h5 { font-size: calc(0.5rem + 0.5vw);
-  color: #a12e00;
+  color: #f55d83;
   font-family: monospace;
   font-style: italic;
   font-weight: bold;
 } 
 
   h6 { font-size: calc(0.5rem + 0.5vw);
-    color: #daa700;
+    color: #f55d83;
     font-family: monospace;
     font-style: italic;
     font-weight: bold;
@@ -92,7 +87,7 @@ h2 {
     border-color: #f5f5f5; 
     border-style: solid; 
     box-shadow: 2px 2px 2px 2px black;
-    width: 30%;
+    width: 87.25%;
     padding: 10px; 
     margin: 20px;
     background-color: #5d8155;
@@ -106,7 +101,7 @@ h2 {
     border-color: #f55d83; 
     border-style: solid; 
     box-shadow: 2px 2px 2px 2px black;
-    width: 40%;
+    width: 87.25%;
     padding: 10px; 
     margin: 20px;
     background-color: #5d8155;
@@ -120,7 +115,7 @@ h2 {
   border-color: #f55d83; 
   border-style: solid; 
   box-shadow: 2px 2px 2px 2px black;
-  width: 20%;
+  width: fit-content;
   padding: 10px;
   margin: 10px 10px 10px 10px;
   background-color: #5d8155;
@@ -133,7 +128,7 @@ h2 {
   border-color: #f5f5f5; 
   border-style: solid; 
   box-shadow: 2px 2px 2px 2px black;
-  width: 30%;
+  width: fit-content;
   padding: 10px;
   margin: 10px 10px 10px 10px;
   background-color: #5d8155;
@@ -145,8 +140,8 @@ h2 {
 clear: both;
 }
 
-.Goldlight { color: #fcefb8;
-   text-shadow: 1px 1px #facc01;}
+.Goldlight { color: #f55d83;
+   }
 
 
 .column {
@@ -154,7 +149,7 @@ clear: both;
   height: auto;
   margin: 2.5%;
   padding: 10px;
-  width: 85%;
+  width: 80%;
   }
 
 .row:after {
@@ -163,16 +158,19 @@ clear: both;
   clear: both;}
 
 
-.text-border {border: 1px; border-color: #ffd651; border-style: solid; }
+.text-border {border: 1px; border-color: #ffd651; border-style: solid; 
+ background-color: #815939;
+padding: 5px;
+}
 
 .images-column {
   display: flex;
   float: right;
-  width: 200px;
-  height: 120px;
-  padding: 5px;
-  margin: 5px;
-  border: 5px; border-color:  #ffd651; border-style: solid; border-radius: 5%;
+  width: 75px;
+  height: 50px;
+  padding: 1px;
+  margin: 1px;
+  border: 2px; border-color:  #ffd651; border-style: solid; border-radius: 5%;
 }
 
 /* Style the images inside the grid */
