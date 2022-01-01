@@ -60,7 +60,7 @@ div.content {
 }
 
 
-body { background: conic-gradient( #815939, #f55d83,  #5d8155,  #f55d83,  #815939) no-repeat;
+body { background: conic-gradient(#f55d83,    #5d8155, #815939,   #815939  #f55d83,) no-repeat;
   background-attachment: fixed;
   text-align: center;
   font-size: calc(0.5rem + 0.5vw);
